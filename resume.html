@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <script>
+  // Disable transitions during first paint to avoid "fade" flash
+  document.documentElement.classList.add('preload');
+
+  (function () {
+    var saved = localStorage.getItem('theme');
+    if (!saved) {
+      saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', saved);
+  })();
+</script>
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXJ2NQQ00T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXJ2NQQ00T');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/monogram.png" />
+    <title>Nigora Jumaeva</title>
+  </head>
+  
+  <!-- Body -->
+  <body>
+    <!-- Top Nav -->
+<div class="topnav">
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="work.html">Work</a>
+  </div>
+
+  <div class="theme-toggle-container">
+    <label class="theme-toggle" aria-label="Toggle dark mode">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+    <div class="grid-2">
+      <!-- LEFT COLUMN -->
+      <div class="section-1">
+        <!--Title-->
+        <div class="container">
+          <div class="shape">
+            <h1 class="title">Resume</h1>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="section-2">
+        <!-- Type Line-->
+
+       
+        <!-- Skills -->
+<h2>Knowledge & Skills</h2>
+<ul class="columns">
+  <!-- Programming Languages -->
+  <li>C</li>
+  <li>C++</li>
+  <li>Python</li>
+  <li>JavaScript</li>
+  <li>SQL</li>
+
+  <!-- Web Development -->
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>DOM Manipulation</li>
+  <li>Responsive Web Design</li>
+
+  <!-- Software Development -->
+  <li>Object-Oriented Programming (OOP)</li>
+  <li>Procedural Programming</li>
+  <li>Data Structures & Algorithms (Fundamentals)</li>
+  <li>Unit Testing (CppUnitTest, Python unittest)</li>
+  <li>Debugging</li>
+  <li>API integration</li>
+  <li>Regular Expressions</li>
+
+  <!-- Databases -->
+  <li>Oracle SQL</li>
+  <li>MySQL</li>
+  <li>MongoDB (CRUD)</li>
+  <li>Database Design & ERD</li>
+
+  <!-- Data Analysis -->
+  <li>Python Pandas</li>
+  <li>NumPy</li>
+  <li>Matplotlib</li>
+  <li>Data Cleaning</li>
+  <li>Statistical Analysis (Basic)</li>
+  <li>CSV/JSON Processing</li>
+
+  <!-- Development Tools -->
+  <li>Visual Studio</li>
+  <li>VS Code</li>
+  <li>System Design</li>
+  <li>Visual Paradigm</li>
+  <li>MongoDB Atlas</li>
+  <li>Git & GitHub</li>
+
+  <!-- Other Technical Skills -->
+  <li>Linux Command Line</li>
+  <li>Windows Script</li>
+  <li>JSON</li>
+  <li>XML</li>
+
+  <!-- Software Engineering Practices -->
+  <li>Agile & Kanban</li>
+  <li>Documentation Writing</li>
+  <li>Requirements Analysis</li>
+  <li>Code Reviews</li>
+</ul>
+
+        <!-- Experience 
+        <h2>Experience</h2>
+
+        <p>
+          <span>Okta</span>
+          <br />Technical Writer<br /> April 2025 - Current
+        </p>
+
+        <p>
+          <span>Seneca College</span>
+          <br />Member, Technical Communication (TEC) Progam Advisory Committee<br /> April 2025 - Current
+        </p>
+
+        <p>
+          <span>Dominion Voting Systems</span>
+          <br />Technical Writer<br />March 2023 - April 2025
+        </p>
+        
+        <p>
+          <span>Privacera</span>
+          <br />Technical Editor & Information Architect (Contract) <br />July 2022 - Feb 2023
+        </p>  
+        
+         <p>
+          <span>Wordnik</span>
+          <br />Technical Editor (Contract) <br />April 2022 - July 2022
+        </p>
+        
+        <p>
+          <span>Tulip</span>
+          <br />Content Designer Coop <br />Jan 2022 - April 2022
+        </p>
+
+        <p>
+          <span>Rotman Research Institute (Baycrest)</span>
+          <br />Honours Thesis Research Project <br />July 2019 - March 2020
+        </p>
+
+        <p>
+          <span>The Excalibur, York University</span>
+          <br />Contributing Writer <br />2017
+        </p>
+
+        <p>
+          <span>Chart Attack (Music Blog), Toronto</span>
+          <br />Music Journalist <br />2016
+        </p>
+
+        <p>
+          <span>BlogTO, Toronto</span>
+          <br />Content Writer <br />2016
+        </p>
+
+        <p>
+          <span>Evolve Camps, Toronto</span>
+          <br />Web Content Writer <br />2016
+        </p>
+
+        <p>
+          <span>Shift Transit, Toronto</span>
+          <br />Field Mechanic <br />October 2020 - August 2021
+        </p>
+
+        <!--Add more experience
+
+        <p>
+          <span></span>
+          <br>
+          <br>
+        </p>
+
+        <p>
+          <span></span>
+          <br>
+          <br>
+        </p>
+
+        --> 
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <p>
+          <span>Seneca College, Toronto</span> <br />Advanced Diploma in Computer Programming & Analysis <br />
+          Sept 2024-Present 
+          
+        </p>
+
+        <p>
+          <span>Bukhara State University, Bukhara, Uzbekistan</span>
+          <br />Bachelor of (B.A) English Language Philology <br />2006 -2010
+        </p>
+
+
+        <!--
+         Publications 
+        <h2>Publications</h2>
+        
+        <p>Controversial ad can't keep up the times
+          <br><i>The Excalibur</i>
+        </p>
+        -->
+      
+
+        <!-- Certifications & Awards  -->
+        <h2>Certifications & Awards</h2>
+        <ul>
+        <li>
+                <strong>Government Academic Scholarship — Uzbekistan</strong><br>
+                Granted to students with outstanding entrance examination performance, placing among the highest-ranking candidates nationwide. Awarded during admission to Bukhara State University.  
+        </li> <br>
+        <li>
+            <strong>Linkedin</strong>
+            <a href="https://www.linkedin.com/learning/certificates/56d214c3cb2cb4621800e567a2b155c1ac280f5d3a42324e48419cfd55de2341?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BsTdvoYp%2FRPeJDPYCJMWPaQ%3D%3D" target="_blank">
+            <img src="image/linkedIn_logo.png" alt="LinkedIn Profile" class="badge-logo"> Tips for Writing Business Emails
+        </a>
+        </li> <br>
+        <li>
+            <strong>Google</strong>
+            <a href="https://www.coursera.org/account/accomplishments/records/84S93G4PBH8L" target="_blank">
+            <img src="image/google.png" alt="Google Certification" class="badge-logo"> Ask Questions to Make Data-Driven Decisions
+            </a>          
+            <a href="https://www.coursera.org/account/accomplishments/records/C93M28P25RQZ" target="_blank">
+            <img src="image/google.png" alt="Google Certification" class="badge-logo"> Foundations: Data, Data, Everywhere
+            </a>  
+            </li>
+        </ul>
+        
+        <br>
+        
+     
+      </div>
+    </div>
+    <script>
+  window.addEventListener('DOMContentLoaded', function () {
+    document.documentElement.classList.remove('preload');
+  });
+</script>
+<script src="theme.js"></script>
+
+  </body>
+</html>

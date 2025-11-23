@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <script>
+      // Disable transitions during first paint to avoid "fade" flash
+      document.documentElement.classList.add('preload');
+
+      (function () {
+        var saved = localStorage.getItem('theme');
+        if (!saved) {
+          saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', saved);
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXJ2NQQ00T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GXJ2NQQ00T');
+    </script>
+
+    <script src="https://kit.fontawesome.com/05b4cbe5cf.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/monogram.png" />
+
+    <title>Nigora Jumaeva — Portfolio</title>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Top Nav -->
+    <div class="topnav">
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="work.html">Work</a>
+      </div>
+
+      <div class="theme-toggle-container">
+        <label class="theme-toggle" aria-label="Toggle dark mode">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <!-- LEFT COLUMN -->
+      <div class="section-1">
+        <!--Headshot-->
+        <div class="container">
+          <div class="shape">
+            <img class="headshot" src="image/MyPhoto.jpg" alt="Nigora Jumaeva Headshot" />
+          </div>
+        </div>
+
+        <h1>Nigora Jumaeva</h1>
+        <p><span>Computer Programming & Analysis Student</span></p>
+        <p>Markham, Ontario, Canada</p>
+
+        <!-- Icons -->
+        <a title="LinkedIn" href="https://www.linkedin.com/in/nigora-jumaeva-353258242" class="icon-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+       <a title="E-mail" 
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=njumaeva@myseneca.ca&su=&body=" 
+   target="_blank" 
+   class="icon-link">
+  <i class="far fa-envelope"></i>
+</a>
+
+        <a title="Resume" href="downloads/NIGORA_JUMAEVA_GENERAL2_CV_2025.pdf" download class="icon-link">
+  <i class="far fa-file"></i>
+</a>
+        <a title="GitHub" href="https://www.github.com/NigoraJumaeva" class="icon-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="section-2">
+        <!-- Type Line-->
+        <p class="line-1 anim-typewriter">
+          I build modern web apps and practical software solutions.
+        </p>
+
+        <!-- About -->
+        <h2>About</h2>
+        <p>
+          I am a Computer Programming and Analysis student at Seneca Polytechnic with hands-on experience in C, C++, databases (Oracle SQL, MongoDB, MySQL, PostgreSQL), web development frameworks, software testing, and system design. Beyond my academic training, I proactively expand my expertise in Python, AI, and data analytics through Coursera and Google online courses. Passionate about building modern, practical web applications and software solutions, I am eager to contribute analytical and development skills to innovative projects that drive real impact.
+        </p>
+
+        <!-- Skills
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Programming Languages:</strong> C, C++, Python, SQL, JavaScript, HTML5, CSS3</li>
+          <li><strong>Databases:</strong> Oracle SQL, MongoDB, MySQL (basic), PostgreSQL</li>
+          <li><strong>Operating Systems:</strong> Windows, Linux/Unix</li>
+          <li><strong>Tools & IDEs:</strong> Jira, Microsoft Excel, GitHub, Visual Studio, VS Code, Visual Paradigm</li>
+          <li><strong>Methodologies:</strong> Agile (Scrum, Kanban), SDLC, UML Diagramming</li>
+          <li><strong>Web Development:</strong> JavaScript, Node.js, Express.js, UI Toolkits, Template Engines, HTML Forms</li>
+          <li><strong>Web API & Async Programming:</strong> RESTful API design, CRUD operations, JSON, AJAX, Callbacks, Promises, async/await</li>
+          <li><strong>Routing & Middleware:</strong> Advanced routing, request/response handling, Express middleware</li>
+          <li><strong>State Management:</strong> Application state concepts</li>
+          <li><strong>Cybersecurity Fundamentals:</strong> Secure coding, SQL injection prevention, data encryption, HTTPS, CORS</li>
+          <li><strong>Deployment:</strong> Vercel deployment, project documentation</li>
+        </ul>
+      </div>
+    </div> -->
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        document.documentElement.classList.remove('preload');
+      });
+    </script>
+    <script src="theme.js"></script>
+  </body>
+</html>
