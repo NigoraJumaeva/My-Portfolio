@@ -30,7 +30,7 @@ div.shape {
   width: 35vh;
   height: 35vh;
   border-radius: 50%;
-  background: rgba(140, 200, 237, 0.15); /* soft light color */
+  background: #099be9ca; /* soft light color */
   backdrop-filter: blur(4px);
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
 }
