@@ -21,7 +21,19 @@
   justify-content: center;
 }
 
+div.shape {
+  display: flex;
+  align-items: center;
+}
 
+.shape {
+  width: 35vh;
+  height: 35vh;
+  border-radius: 50%;
+  background: rgba(140, 200, 237, 0.15); /* soft light color */
+  backdrop-filter: blur(4px);
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
+}
 
 @keyframes plasma {
   0% { background-position: 0% 50%; }
