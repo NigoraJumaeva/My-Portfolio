@@ -32,7 +32,7 @@ div.shape {
   border-radius: 50%;
   background: #099be9ca; /* soft light color */
   backdrop-filter: blur(4px);
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 0 8px rgba(31, 4, 207, 0.1));
 }
 
 @keyframes plasma {
