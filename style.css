@@ -21,20 +21,7 @@
   justify-content: center;
 }
 
-div.shape {
-  display: flex;
-  align-items: center;
-}
 
-.shape {
-  width: 35vh;
-  height: 35vh;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #8bc8ed, #e311d2, #6a00ff);
-  background-size: 300% 300%;
-  animation: plasma 6s ease-in-out infinite, warp 8s infinite alternate;
-  filter: drop-shadow(0 0 20px rgb(111, 199, 240));
-}
 
 @keyframes plasma {
   0% { background-position: 0% 50%; }
